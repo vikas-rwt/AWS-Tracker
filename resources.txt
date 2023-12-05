@@ -1,0 +1,167 @@
+ Below is the list of S3 buckets 
+ Below is the list of Ec2 instances 
+{
+    "Reservations": [
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "ImageId": "ami-0287a05f0ef0e9d9a",
+                    "InstanceId": "i-0b14f9f53c55e3e09",
+                    "InstanceType": "t2.micro",
+                    "KeyName": "test",
+                    "LaunchTime": "2023-12-05T11:27:46+00:00",
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "ap-south-1a",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-172-31-46-205.ap-south-1.compute.internal",
+                    "PrivateIpAddress": "172.31.46.205",
+                    "ProductCodes": [],
+                    "PublicDnsName": "ec2-3-110-142-104.ap-south-1.compute.amazonaws.com",
+                    "PublicIpAddress": "3.110.142.104",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "StateTransitionReason": "",
+                    "SubnetId": "subnet-08da134ce5eb944a7",
+                    "VpcId": "vpc-0edd11120813edc66",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "AttachTime": "2023-12-05T11:27:46+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-06e9b0dababf7cb7a"
+                            }
+                        }
+                    ],
+                    "ClientToken": "821cd681-80a5-4cf9-a16e-1cdbab8b22be",
+                    "EbsOptimized": false,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "NetworkInterfaces": [
+                        {
+                            "Association": {
+                                "IpOwnerId": "amazon",
+                                "PublicDnsName": "ec2-3-110-142-104.ap-south-1.compute.amazonaws.com",
+                                "PublicIp": "3.110.142.104"
+                            },
+                            "Attachment": {
+                                "AttachTime": "2023-12-05T11:27:46+00:00",
+                                "AttachmentId": "eni-attach-04ab18a724f0eca25",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupName": "launch-wizard-2",
+                                    "GroupId": "sg-04c2e95a358a0fbea"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "02:d7:75:f9:4d:22",
+                            "NetworkInterfaceId": "eni-098c1c67f10ebe7fc",
+                            "OwnerId": "189034592343",
+                            "PrivateDnsName": "ip-172-31-46-205.ap-south-1.compute.internal",
+                            "PrivateIpAddress": "172.31.46.205",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Association": {
+                                        "IpOwnerId": "amazon",
+                                        "PublicDnsName": "ec2-3-110-142-104.ap-south-1.compute.amazonaws.com",
+                                        "PublicIp": "3.110.142.104"
+                                    },
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-172-31-46-205.ap-south-1.compute.internal",
+                                    "PrivateIpAddress": "172.31.46.205"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-08da134ce5eb944a7",
+                            "VpcId": "vpc-0edd11120813edc66",
+                            "InterfaceType": "interface"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/sda1",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "launch-wizard-2",
+                            "GroupId": "sg-04c2e95a358a0fbea"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Tags": [
+                        {
+                            "Key": "Name",
+                            "Value": "portfolio_Instance"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 1,
+                        "ThreadsPerCore": 1
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "required",
+                        "HttpPutResponseHopLimit": 2,
+                        "HttpEndpoint": "enabled",
+                        "HttpProtocolIpv6": "disabled",
+                        "InstanceMetadataTags": "disabled"
+                    },
+                    "EnclaveOptions": {
+                        "Enabled": false
+                    },
+                    "PlatformDetails": "Linux/UNIX",
+                    "UsageOperation": "RunInstances",
+                    "UsageOperationUpdateTime": "2023-12-05T11:27:46+00:00",
+                    "PrivateDnsNameOptions": {
+                        "HostnameType": "ip-name",
+                        "EnableResourceNameDnsARecord": true,
+                        "EnableResourceNameDnsAAAARecord": false
+                    },
+                    "MaintenanceOptions": {
+                        "AutoRecovery": "default"
+                    },
+                    "CurrentInstanceBootMode": "legacy-bios"
+                }
+            ],
+            "OwnerId": "189034592343",
+            "ReservationId": "r-0cee86a99481bf1da"
+        }
+    ]
+}
+ Ec2 Instance IDs after JSON parsing 
+"i-0b14f9f53c55e3e09"
+ Below is the list of users 
+{
+    "Users": []
+}
+ Below is a list of the public and private hosted zones that are associated with the current Amazon Web Services account 
+{
+    "HostedZones": []
+}
+ Lists Load balancers. If no load balancer is specified, it lists all Load balancers 
+{
+    "LoadBalancers": []
+}
